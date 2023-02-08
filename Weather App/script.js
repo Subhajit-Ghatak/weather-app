@@ -11,7 +11,7 @@ const weather = (word) => {
 	const options = {
 		method: 'GET',
 		headers: {
-			'X-RapidAPI-Key': 'The key is private',
+			'X-RapidAPI-Key': 'b57c3846b9msh17018c25c4c6f33p1c5692jsn0f18df506b4d',
 			'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
 		}
 	};
