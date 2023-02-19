@@ -18,8 +18,10 @@ const weather = (word) => {
 
 	fetch('https://weatherapi-com.p.rapidapi.com/current.json?q=' + word, options)
 		.then((response) => { return response.json() })
-		.then((response) => {
-			console.log(response)
+		.then((response) => {			
+			if(icon.hasChildNodes() === true){
+				icon.removeChild(icon.firstChild);
+			}		
 			loc.innerHTML = response.location.name
 			country.innerHTML = response.location.country + " " + response.location.localtime
 			temp_c.innerHTML = response.current.temp_c + "°C"
